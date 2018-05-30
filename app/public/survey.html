@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head lang="en-us">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Platonix</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome Library -->
+	<script src="https://use.fontawesome.com/28a2b82478.js"></script>
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans+Condensed:300" rel="stylesheet">
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+ -->	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+<body id="survey-page">
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<!-- WE'LL NEED TO CHANGE THIS PATH TO THE ROOT DIRECTORY!! -->
+			<a href="home.html"><h2 class="navbar-text text-left"><i class="fa fa-link" aria-hidden="true"></i>Platoni<span class="orange">x</span></h2></a>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="survey-header">
+					<h1 id="survey-header" class="survey-title"><i class="fa fa-address-card-o" aria-hidden="true"></i>Your Profile</h1>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="form-container">
+					<form class="form-horizontal" method='POST' action='/survey'>
+						<h3 class="form-subheading">A little about me...</h3><hr />
+						<div class="form-group">
+							<label for="name" class=" text-left" control-label="name">Name (Required)</label>
+							<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+						</div>
+						<div class="form-group">
+							<label for="image" class=" text-left" control-label="name">Image URL (Required)</label>
+							<input type="text" class="form-control" id="image" placeholder="Link to image" name="photo">
+						</div>
+						<div class="form-group">
+							<label for="location" class="text-left" control-label="name">Where do you live?</label>
+							<input type="text" class="form-control" id="location" placeholder="Austin, TX" name="city">
+						</div>
+						<div class="form-group">
+							<label for="hobbies">Top 3 Hobbies</label>
+							<textarea class="form-control" id="hobbies" rows="3" placeholder="Volleyball, Guitar, Hiking" name="hobbies"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">Your mind is always buzzing with unexplored ideas and plans.</label>
+							<select class="form-control" name="Q1" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">Generally speaking, you rely more on your experience than your imagination.</label>
+							<select class="form-control" name="Q2" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+							<select class="form-control" name="Q3" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">You rarely do something just out of sheer curiosity.</label>
+							<select class="form-control" name="Q4" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">People can rarely upset you.</label>
+							<select class="form-control" name="Q5" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">It is often difficult for you to relate to other people’s feelings.</label>
+							<select class="form-control" name="Q6" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">In a discussion, truth should be more important than people’s sensitivities.</label>
+							<select class="form-control" name="Q7" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">You rarely get carried away by fantasies and ideas.</label>
+							<select class="form-control" name="Q8" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+							<select class="form-control" name="Q9" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>		
+						</div>
+						<div class="form-group">
+							<label for="question-one" class="text-left">You feel more energetic after spending time with a group of people.</label>
+							<select class="form-control" name="Q10" required>
+								<option>Selection an Option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+						<button type="submit" class="btn btn-success btn-lg btn-block">Submit!</button>
+					</form>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<footer>
+		<div class="container text-center footer">
+			<p class="footer-text"><i class="fa fa-link" aria-hidden="true"></i>Platoni<span class="orange">x</span> inc.</p>
+		</div>
+	</footer>
+
+
+
+
+	<!-- Custon JavaScript -->
+	<script type="text/javascript" src="assets/friends.js"></script>
+
+</body>
+</html>
